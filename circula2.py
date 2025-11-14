@@ -1,15 +1,13 @@
-import calculadora as c
-
-churrasco = c.calculadora()  #churrasco é o objeto
+from calculadora import calculadora1
 
 #Entrada de dados
 raio = float(input("Digite o valor do raio: "))
 
 #Processamento de dados
-circunferencia = churrasco.circunferencia(raio)
-area = churrasco.area(raio)
+circunferencia = calculadora1.circunferencia(raio)
+area = calculadora1.area(raio)
 
 #Saída de dados
 print(f"""Circunferência: {circunferencia:.2f} 
       Area: {area}
-      PI: {churrasco.PI}""")
+      PI: {calculadora1.PI}""")
